@@ -1,0 +1,24 @@
+import { useState } from 'react'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import './App.css'
+import Nav from './Components/Nav'
+import Homepage from './Components/HomePage'
+
+function App() {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route element={<Nav/>}>
+          <Route index element={<Homepage/>}/>
+        </Route>
+      </>
+    )
+  )
+
+  return (
+    <RouterProvider router={router}/>
+  )
+}
+
+export default App

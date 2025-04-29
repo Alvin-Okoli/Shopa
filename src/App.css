@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer base {
+    .scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+      
+}
