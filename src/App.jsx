@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Nav from './Components/Nav'
-import Homepage from './Components/HomePage'
+import Homepage from './HomePage'
 
 function App() {
 

@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { Outlet } from "react-router-dom";
 
 
-export default function Nav(){
+ const Nav = memo(()=>{
 
     return(
         <>
@@ -34,4 +35,6 @@ export default function Nav(){
             <Outlet/>
         </>
     )
-}
+})
+
+export default Nav
