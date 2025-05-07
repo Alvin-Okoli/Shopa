@@ -11,6 +11,7 @@ function App() {
       <>
         <Route element={<Nav/>}>
           <Route index element={<Homepage/>}/>
+          {/* <Route path=':cloth' element={}/> */}
         </Route>
       </>
     )

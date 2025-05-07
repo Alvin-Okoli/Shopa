@@ -1,6 +1,7 @@
 import {memo, lazy, Suspense} from 'react'
-import Review from './Components/Review'
 import Footer from './Components/Footer'
+
+//Important modules
 const LazyLoadImage = lazy(()=>import('react-lazy-load-image-component').then(module=>({default: module.LazyLoadImage})))
 const Rating = lazy(()=>import('@chepchik/react-rating').then(module=>({default: module.Rating})))
 
@@ -10,12 +11,14 @@ const Brands = lazy(()=> import('./Components/Brand'))
 const Products = lazy (()=> import('./Components/Products'))
 const Styles = lazy (()=> import('./Components/Styles'))
 const NewsLetter = lazy(()=>import('./Components/NewsLetter'))
+const Review = lazy(()=> import('./Components/Review'))
 
 const newArrivals = [
     {name: 'T-shirt with Tape', rating: 4.5, price: '$120', frame: 'Frame32.png'}, 
     {name: 'Skinny fit jeans', rating: 3.5, price: '$240', frame: 'Frame58.png', oldPrice: '$260', discount: '-20%'}, 
     {name: 'Checkered shirt', rating: 5, price: '$180', frame: 'Frame34.png'},
-    {name: 'Sleeves Striped T-shirt', rating: 4.5, price: '$130', frame: 'Frame38.png', oldPrice: '$160', discount: '-30%'}
+    {name: 'Sleeves Striped T-shirt', rating: 4.5, price: '$130', frame: 'Frame38.png', oldPrice: '$160', discount: '-30%'},
+    {name: 'Sleeves Striped T-shirts', rating: 4.5, price: '$130', frame: 'Frame38.png', oldPrice: '$160', discount: '-30%'}
 ]
 
 const topSelling = [
