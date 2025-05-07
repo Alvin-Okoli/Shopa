@@ -5,11 +5,11 @@ const Rating = lazy(()=>import('@chepchik/react-rating').then(module=>({default:
 const Listings = memo(({product})=>{
     return(
         <>
-            <div key={product.name} className="my-3 w-auto inline-block mx-2">
+            <div key={product.name} className="my-3 w-auto inline-block mx-2 md:w-1/4">
                 <LazyLoadImage 
                     src={product.frame} 
                     alt={`${product.name} picture`} 
-                    className=" w-[198px] h-[200px]"
+                    className=" w-[198px] h-[200px] md:w-10/12 md:h-[250px]"
                 />
 
                 <div className="font-semibold text-xl">{product.name}</div>
