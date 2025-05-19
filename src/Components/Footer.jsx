@@ -5,7 +5,7 @@ const LazyLoadImage = lazy(()=> import('react-lazy-load-image-component').then(m
 const Footer = memo(()=>{
 
     return(
-        <footer className="m-4 pb-20 lg:px-24 md:mt-10">
+        <footer className="m-4 pb-10 lg:px-24 md:mt-10">
             <div className="grid grid-cols-2 lg:grid-cols-6 gap-y-4 mb-5 md:mb-10">
                 <div className="col-span-2">
                     <p className="text-3xl font-extrabold my-4">SHOP.CO</p>

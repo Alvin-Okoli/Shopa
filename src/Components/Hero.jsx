@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { NavLink } from "react-router-dom";
 
 const Hero = memo(()=>{
     return (
@@ -12,7 +13,7 @@ const Hero = memo(()=>{
         
                     <div className="text-sm font-extralight md:text-xl">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</div>
         
-                    <button className="w-full mt-6 mb-3 p-3 text-white text-sm bg-black rounded-4xl md:w-1/5 cursor-pointer hover:bg-gray-700 ">Shop Now</button>
+                    <NavLink to='/category'><button className="w-full mt-6 mb-3 p-3 text-white text-sm bg-black rounded-4xl md:w-1/5 cursor-pointer hover:bg-gray-700 ">Shop Now</button></NavLink>
         
                     <div className="mx-3 md:mx-10">
                         <div className="inline-block border-r-1 border-r-gray-400 px-6 mt-4 w-1/2 md:w-1/3">

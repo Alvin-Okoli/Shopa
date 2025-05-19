@@ -1,5 +1,5 @@
 import { memo, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 
  const Nav = memo(()=>{
@@ -19,14 +19,15 @@ import { Outlet } from "react-router-dom";
                     <img src="burger-menu-svgrepo-com.svg" alt="option" className="inline-block w-6" onClick={handleDropDown}/>
                 </div>
                 
-
-                <div className="font-extrabold text-2xl md:text-5xl cursor-pointer">SHOP.CO</div>
+                <NavLink to='/'>
+                    <div className="font-extrabold text-2xl md:text-5xl cursor-pointer">SHOP.CO</div>
+                </NavLink>
 
                 <div className="hidden pt-2 md:flex gap-5 mx-5 mt-2">
-                    <div className=" cursor-pointer hover:text-gray-600">Shop</div>
-                    <div className=" cursor-pointer hover:text-gray-600">On sale</div>
-                    <div className=" cursor-pointer hover:text-gray-600">New Arrivals</div>
-                    <div className=" cursor-pointer hover:text-gray-600">Brands</div>
+                    <NavLink to='/category'><div className=" cursor-pointer hover:text-gray-600">Shop</div></NavLink>
+                    <NavLink><div className=" cursor-pointer hover:text-gray-600">On sale</div></NavLink>
+                    <NavLink><div className=" cursor-pointer hover:text-gray-600">New Arrivals</div></NavLink>
+                    <NavLink><div className=" cursor-pointer hover:text-gray-600">Brands</div></NavLink>
                 </div>
 
                 <div className="hidden bg-stone-100 shadow rounded-3xl mx-3 px-4 lg:w-[30%] xl:w-[50%] xl:ml-5 lg:flex">

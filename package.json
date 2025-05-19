@@ -12,6 +12,7 @@
   "dependencies": {
     "@chepchik/react-rating": "^0.0.5",
     "@tailwindcss/vite": "^4.1.4",
+    "axios": "^1.9.0",
     "react": "^19.1.0",
     "react-dom": "^19.0.0",
     "react-lazy-load-image-component": "^1.6.3",

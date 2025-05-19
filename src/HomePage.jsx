@@ -8,7 +8,7 @@ const Rating = lazy(()=>import('@chepchik/react-rating').then(module=>({default:
 //lazy loading Components
 const Hero = lazy(()=> import('./Components/Hero'))
 const Brands = lazy(()=> import('./Components/Brand'))
-const Products = lazy (()=> import('./Components/Products'))
+const Products = lazy (()=> import('./Components/HomeProducts'))
 const Styles = lazy (()=> import('./Components/Styles'))
 const NewsLetter = lazy(()=>import('./Components/NewsLetter'))
 const Review = lazy(()=> import('./Components/Review'))
@@ -43,9 +43,9 @@ const review = [
     {name: 'Sarai', review: "I'm absolutely in love with my new shirt from Shop.co! The quality is top-notch, and the fit is perfect. The customer service team was also super helpful when I had a question about sizing. Highly recommend!" , rating: 5}
 ]
 
-const SectionLoadingFallback = () => (
+export const SectionLoadingFallback = () => (
       <div className="animate-pulse p-6 bg-gray-200 h-40 w-full rounded-lg flex items-center justify-center">
-        <p className="text-gray-800 text-xl">Loading section...</p>
+        <p className="text-gray-800 text-xl">Loading </p>
       </div>
   );
 
@@ -81,7 +81,7 @@ export default function Homepage(){
                 
 
                 <Suspense fallback={<SectionLoadingFallback/>}>
-                    <Review review={review}/>
+                    <Review review={review} slice={6} happy={true}/>
                 </Suspense>
                 
 

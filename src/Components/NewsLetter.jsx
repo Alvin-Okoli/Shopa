@@ -5,13 +5,13 @@ const NewsLetter = memo(()=>{
 
     return(
         <section>
-            <div className='bg-black rounded-2xl mx-3 px-5 py-4 my-4 md:flex md:w-5/6 md:mx-auto md:gap-48 lg:px-28 md:h-46 md:pt-4 lg:pt-8'>
+            <div className='bg-black rounded-2xl mx-3 px-5 py-4 my-4 md:flex md:w-5/6 md:mx-auto md:gap-48 lg:px-28 md:h-52 md:pt-4 lg:pb-10 lg:pt-8'>
                 <div className='text-white font-bold text-3xl my-4 lg:text-5xl md:wrap-break-word md:my-1 md:w-2/4'>STAY UPTO DATE ABOUT OUR LATEST OFFERS</div>
 
                 <div className='bg-black md:w-1/3 md:pt-2'>
                 <label>
                     <div className='bg-white rounded-4xl px-2 md:w-full md:px-6'> 
-                        <LazyLoadImage src="email-1-svgrepo-com.svg" className='w-8 inline-block md:hidden lg:inline-block'/>
+                        <LazyLoadImage src="email-1-svgrepo-com.svg" className='w-8 inline-block md:hidden xl:inline-block'/>
                         <input type="email" className='inline-block w-[80%] p-3 outline-none md:' placeholder='Enter your email address'/>
                     </div>
                 </label> 
