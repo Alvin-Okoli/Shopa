@@ -16,8 +16,8 @@ const Styles = memo(({styles})=>{
 
                 <div className="md:grid md:grid-cols-2 md:px-20">
                     {styles.map((style, index)=>(
-                        <NavLink to='/category'>
-                            <div key={`${style.name}-${index}`} className='flex justify-between my-2 mx-4 shadow rounded-3xl bg-white w-auto overflow-hidden cursor-pointer hover:border'>
+                        <NavLink key={`${style.name}-${index}`} to='/category'>
+                            <div className='flex justify-between my-2 mx-4 shadow rounded-3xl bg-white w-auto overflow-hidden cursor-pointer hover:border'>
                             <div className='text-3xl font-semibold mt-[10%] ml-[5%]'>{style.name}</div>
                             <LazyLoadImage src={style.frame} alt={style.name} className='mx-5 w-[230px] h-[150px] mr-0'/>
                         </div>

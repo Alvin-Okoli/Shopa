@@ -6,7 +6,6 @@ const Rating = lazy(()=>import('@chepchik/react-rating').then(module=>({default:
 const Listings = memo(({product, style})=>{
     return(
         <>
-            <NavLink to='/cloth'>
                 <div key={product.name} className={`my-3 w-auto inline-block mx-2 ${style || 'lg:w-1/4'} lg:px-2`}>
                 <LazyLoadImage 
                     src={product.frame} 
@@ -36,7 +35,6 @@ const Listings = memo(({product, style})=>{
                     </div>
                 </div>
             </div>
-            </NavLink>
             
         </>
     )

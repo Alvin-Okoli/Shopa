@@ -16,8 +16,7 @@ function App() {
       <>
         <Route element={<Nav/>}>
           <Route index element={<Homepage/>}/>
-          <Route path='cloth/:id' element={<Product/>}/>
-          <Route path='cloth' element={<Test/>}/>{/*Same as product */}
+          <Route path='cloth' element={<Product/>}/>
           <Route path='category' element={<Category/>}/>
           <Route path='cart' element={<Cart/>}/>
         </Route>
